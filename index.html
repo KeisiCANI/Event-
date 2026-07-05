@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAREA Event Planner - We Turn Your Vision Into an Unforgettable Moment.">
+    <meta name="keywords" content="event planner, wedding, corporate events, Tirana, Albania">
+    <meta name="author" content="MAREA Event Planner">
+    <title>MAREA — Event Planner | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">M<em>A</em>REA</a>
+        <ul id="navMenu">
+            <li><a href="index.html"    class="nav-link active">Home</a></li>
+            <li><a href="about.html"    class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html"  class="nav-link">Gallery</a></li>
+            <li><a href="blog.html"     class="nav-link">Blog</a></li>
+            <li><a href="contact.html"  class="nav-link">Contact</a></li>
+        </ul>
+        <a href="book.html" class="btn-book">BOOK NOW</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-label">Welcome to</p>
+            <h1 class="hero-title">M<em>A</em>REA</h1>
+            <p class="hero-subtitle">We Turn Your Vision Into an Unforgettable Moment</p>
+            <a href="book.html" class="btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+        <article class="stat-item animate-on-scroll">
+            <span class="stat-number">350+</span>
+            <span class="stat-label">Events Planned</span>
+        </article>
+        <article class="stat-item animate-on-scroll">
+            <span class="stat-number">12 Years</span>
+            <span class="stat-label">of Experience</span>
+        </article>
+        <article class="stat-item animate-on-scroll">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Client Satisfaction</span>
+        </article>
+        <article class="stat-item animate-on-scroll">
+            <span class="stat-number">40+</span>
+            <span class="stat-label">Vendor Partners</span>
+        </article>
+    </section>
+
+    <!-- ============ SERVICES PREVIEW ============ -->
+    <section class="services-preview">
+        <div class="section-header animate-on-scroll">
+            <h2>OUR SERVICES</h2>
+            <span class="section-line"></span>
+        </div>
+        <div class="services-grid">
+            <article class="service-card animate-on-scroll">
+                <div class="service-card-img"><span class="img-label">Wedding</span></div>
+                <div class="service-card-body">
+                    <h3>Wedding Planning</h3>
+                    <p>Full-service wedding coordination — from venue scouting to the last dance. We make your dream day real.</p>
+                    <a href="services.html#wedding" class="read-more">Read more</a>
+                </div>
+            </article>
+            <article class="service-card animate-on-scroll">
+                <div class="service-card-img"><span class="img-label">Corporate</span></div>
+                <div class="service-card-body">
+                    <h3>Corporate Events</h3>
+                    <p>Product launches, team retreats, award nights. Professional, polished, and perfectly on-brand.</p>
+                    <a href="services.html#corporate" class="read-more">Read more</a>
+                </div>
+            </article>
+            <article class="service-card animate-on-scroll">
+                <div class="service-card-img"><span class="img-label">Private</span></div>
+                <div class="service-card-body">
+                    <h3>Private Celebrations</h3>
+                    <p>Birthdays, baby showers, anniversaries — every milestone deserves a magical setting.</p>
+                    <a href="services.html#private" class="read-more">Read more</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============ GALLERY PREVIEW ============ -->
+    <section class="gallery-preview">
+        <div class="section-header animate-on-scroll">
+            <h2>A Glimpse of Our Work</h2>
+            <span class="section-line"></span>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item animate-on-scroll"><span class="gallery-item-num">I</span></div>
+            <div class="gallery-item animate-on-scroll"><span class="gallery-item-num">II</span></div>
+            <div class="gallery-item animate-on-scroll"><span class="gallery-item-num">III</span></div>
+            <div class="gallery-item animate-on-scroll"><span class="gallery-item-num">IV</span></div>
+            <div class="gallery-item animate-on-scroll"><span class="gallery-item-num">V</span></div>
+            <div class="gallery-item animate-on-scroll"><span class="gallery-item-num">VI</span></div>
+        </div>
+        <a href="gallery.html" class="view-gallery-link animate-on-scroll">VIEW FULL GALLERY</a>
+    </section>
+
+    <!-- ============ WEATHER WIDGET ============ -->
+    <section style="padding:4rem; background:var(--color-card-bg);">
+        <div class="section-header animate-on-scroll">
+            <h2>PLAN YOUR EVENT DAY</h2>
+            <span class="section-line"></span>
+        </div>
+        <div class="weather-widget animate-on-scroll" id="weatherWidget">
+            <p style="color:rgba(255,255,255,.6);font-size:.85rem;">Loading weather…</p>
+        </div>
+    </section>
+
+    <!-- ============ COUNTDOWN TIMER (User-initiated) ============ -->
+    <section class="countdown-section">
+        <h2>NEXT MAREA ANNUAL GALA</h2>
+        <p class="countdown-event-name">New Year's Eve Grand Gala 2026</p>
+        <p class="countdown-event-date">December 31, 2026 · 20:00 · Tirana</p>
+        <div class="countdown-grid" id="countdownDisplay">
+            <p style="color:rgba(255,255,255,.5);font-size:.85rem;">Press the button to start the countdown.</p>
+        </div>
+        <br><br>
+        <button id="startCountdown" class="btn-primary no-anim" style="opacity:1;animation:none;">
+            ▶ Start Countdown
+        </button>
+    </section>
+
+    <!-- ============ ABOUT PREVIEW ============ -->
+    <section class="about-preview animate-on-scroll">
+        <h2>Behind Every Perfect Event Is a Passionate Team</h2>
+        <p>MAREA was founded on one belief: that every celebration, big or small, deserves the same level of care and creativity. We are a boutique planning studio — hands-on, detail-obsessed, and genuinely in love with what we do.</p>
+        <a href="team.html" class="btn-secondary">MEET OUR TEAM</a>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials">
+        <div class="section-header animate-on-scroll">
+            <h2>Testimonials</h2>
+            <span class="section-line"></span>
+        </div>
+        <div class="testimonials-grid">
+            <article class="testimonial-card animate-on-scroll">
+                <p class="testimonial-text">MAREA made our wedding day absolutely perfect. Every detail was handled with such care and professionalism. We couldn't have asked for more.</p>
+                <span class="testimonial-author">— Sofia &amp; Arian M.</span>
+            </article>
+            <article class="testimonial-card animate-on-scroll">
+                <p class="testimonial-text">Our annual gala was transformed into an unforgettable experience. The team's creativity and attention to brand alignment was remarkable.</p>
+                <span class="testimonial-author">— TechCorp Albania</span>
+            </article>
+            <article class="testimonial-card animate-on-scroll">
+                <p class="testimonial-text">From the first consultation to the final dance, MAREA exceeded every expectation. Truly a boutique experience worth every penny.</p>
+                <span class="testimonial-author">— Klara D.</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">M<em>A</em>REA</a>
+                <p class="footer-tagline">Turning visions into unforgettable moments since 2013.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html#wedding">Wedding Planning</a></li>
+                    <li><a href="services.html#corporate">Corporate Events</a></li>
+                    <li><a href="services.html#private">Private Celebrations</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item"><span>✉</span><span>hello@marea.al</span></div>
+                <div class="footer-contact-item"><span>📞</span><span>+355 00 000 000</span></div>
+                <div class="footer-contact-item"><span>🕐</span><span>Mon–Sun: 11:00 – 23:00</span></div>
+                <div class="footer-contact-item"><span>📍</span><span>Tirana, Albania</span></div>
+            </div>
+        </div>
+        <p class="footer-bottom">© All rights reserved. MAREA Event Planner 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

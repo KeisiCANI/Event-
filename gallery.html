@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAREA Event Planner Gallery — Weddings, Corporate and Private events.">
+    <title>MAREA — Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">M<em>A</em>REA</a>
+        <ul id="navMenu">
+            <li><a href="index.html"    class="nav-link">Home</a></li>
+            <li><a href="about.html"    class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html"  class="nav-link active">Gallery</a></li>
+            <li><a href="blog.html"     class="nav-link">Blog</a></li>
+            <li><a href="contact.html"  class="nav-link">Contact</a></li>
+        </ul>
+        <a href="book.html" class="btn-book">BOOK NOW</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="page-hero">
+        <h1>Gallery</h1>
+        <p>A glimpse into the moments we've created</p>
+    </div>
+
+    <section style="padding:3rem 4rem;background:var(--color-bg);">
+        <!-- Filter Buttons -->
+        <div style="display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem;">
+            <button class="filter-btn active" data-cat="all"       style="padding:.55rem 1.3rem;background:var(--color-text);color:var(--color-white);border:1.5px solid var(--color-text);border-radius:var(--radius-sm);font-size:.82rem;font-weight:600;cursor:pointer;transition:var(--transition);font-family:var(--font-sans);">All</button>
+            <button class="filter-btn"        data-cat="wedding"   style="padding:.55rem 1.3rem;background:var(--color-card-bg);color:var(--color-text);border:1.5px solid var(--color-border);border-radius:var(--radius-sm);font-size:.82rem;font-weight:600;cursor:pointer;transition:var(--transition);font-family:var(--font-sans);">Weddings</button>
+            <button class="filter-btn"        data-cat="corporate" style="padding:.55rem 1.3rem;background:var(--color-card-bg);color:var(--color-text);border:1.5px solid var(--color-border);border-radius:var(--radius-sm);font-size:.82rem;font-weight:600;cursor:pointer;transition:var(--transition);font-family:var(--font-sans);">Corporate</button>
+            <button class="filter-btn"        data-cat="private"   style="padding:.55rem 1.3rem;background:var(--color-card-bg);color:var(--color-text);border:1.5px solid var(--color-border);border-radius:var(--radius-sm);font-size:.82rem;font-weight:600;cursor:pointer;transition:var(--transition);font-family:var(--font-sans);">Private</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="galleryGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:1100px;margin:0 auto;">
+            <div class="g-item animate-on-scroll" data-cat="wedding"   style="aspect-ratio:1;background:linear-gradient(135deg,#dedad4,#ccc9c2);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Wedding I</span></div>
+            <div class="g-item animate-on-scroll" data-cat="wedding"   style="aspect-ratio:1;background:linear-gradient(135deg,#e0ddd7,#d0ccc5);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Wedding II</span></div>
+            <div class="g-item animate-on-scroll" data-cat="corporate" style="aspect-ratio:1;background:linear-gradient(135deg,#d5d2cc,#c8c4bd);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Corporate I</span></div>
+            <div class="g-item animate-on-scroll" data-cat="private"   style="aspect-ratio:1;background:linear-gradient(135deg,#dedad4,#ccc9c2);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Private I</span></div>
+            <div class="g-item animate-on-scroll" data-cat="corporate" style="aspect-ratio:1;background:linear-gradient(135deg,#e0ddd7,#d0ccc5);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Corporate II</span></div>
+            <div class="g-item animate-on-scroll" data-cat="private"   style="aspect-ratio:1;background:linear-gradient(135deg,#d5d2cc,#c8c4bd);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Private II</span></div>
+            <div class="g-item animate-on-scroll" data-cat="wedding"   style="aspect-ratio:1;background:linear-gradient(135deg,#dedad4,#ccc9c2);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Wedding III</span></div>
+            <div class="g-item animate-on-scroll" data-cat="private"   style="aspect-ratio:1;background:linear-gradient(135deg,#e0ddd7,#d0ccc5);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Private III</span></div>
+            <div class="g-item animate-on-scroll" data-cat="corporate" style="aspect-ratio:1;background:linear-gradient(135deg,#d5d2cc,#c8c4bd);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Corporate III</span></div>
+            <div class="g-item animate-on-scroll" data-cat="wedding"   style="aspect-ratio:1;background:linear-gradient(135deg,#dedad4,#ccc9c2);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Wedding IV</span></div>
+            <div class="g-item animate-on-scroll" data-cat="corporate" style="aspect-ratio:1;background:linear-gradient(135deg,#e0ddd7,#d0ccc5);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Corporate IV</span></div>
+            <div class="g-item animate-on-scroll" data-cat="private"   style="aspect-ratio:1;background:linear-gradient(135deg,#d5d2cc,#c8c4bd);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;transition:var(--transition);cursor:pointer;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"><span style="font-family:var(--font-heading);font-style:italic;color:rgba(45,61,79,.25);font-size:1.2rem;">Private IV</span></div>
+        </div>
+    </section>
+
+    <section style="text-align:center;padding:3rem 2rem;background:var(--color-bg);">
+        <p style="font-size:1rem;color:var(--color-text);margin-bottom:.5rem;">Like what you see?</p>
+        <a href="book.html" style="font-weight:700;font-size:.95rem;color:var(--color-text);border-bottom:2px solid var(--color-text);padding-bottom:2px;">Let's plan your event →</a>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col"><a href="index.html" class="footer-logo">M<em>A</em>REA</a><p class="footer-tagline">Turning visions into unforgettable moments since 2013.</p></div>
+            <div class="footer-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#wedding">Wedding Planning</a></li><li><a href="services.html#corporate">Corporate Events</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="team.html">Our Team</a></li></ul></div>
+            <div class="footer-col"><h4>Contact Us</h4><div class="footer-contact-item"><span>✉</span><span>hello@marea.al</span></div><div class="footer-contact-item"><span>📞</span><span>+355 00 000 000</span></div><div class="footer-contact-item"><span>📍</span><span>Tirana, Albania</span></div></div>
+        </div>
+        <p class="footer-bottom">© All rights reserved. MAREA Event Planner 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
